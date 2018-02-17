@@ -13,8 +13,7 @@ class App extends Component {
     return (
       <div>
         <div>
-          <Link to="/">Users</Link>
-          <Link to="/pizza">Pizza</Link>
+          <NavLink to="/">Users</NavLink> | <NavLink to="/pizza">Pizza</NavLink>
         </div>
         <div>
           <Route path="/" exact component={Users} />
@@ -24,3 +23,5 @@ class App extends Component {
     )
   }
 }
+
+export default App

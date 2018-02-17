@@ -1,5 +1,6 @@
 const path = require('path')
 const autoprefixer = require('autoprefixer')
+const htmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map', // best source map for development. Rich and fast.
@@ -62,5 +63,13 @@ module.exports = {
         loader: 'url-loader?limit=8000&name=images/[name].[ext]'
       }
     ]
-  }
+  },
+  plugins: [
+    // this is the guy whom injects the js code into the index.html
+    new htmlWebpackPlugin({
+      template: __dirname + '/src/index.html',
+      filename: 'index.html',
+      inject: 'body'
+    })
+  ]
 }
