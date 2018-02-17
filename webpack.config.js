@@ -50,6 +50,15 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        /* 
+          This puts images inline to decrease the number of files user has to download
+          But also increases bundle size.
+          Above 8000, file-loader enters and copy the image itself to the folder of path (dist) / the name especified in the name query param
+        */
+        test: /\.(png|jpe?g|gif)$/,
+        loader: 'url-loader?limit=8000&name=images/[name].[ext]'
       }
     ]
   }
