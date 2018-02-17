@@ -1,0 +1,24 @@
+{
+  "name": "webpack-training",
+  "version": "1.0.0",
+  "description": "Training webpack from scratch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndersonCossul/webpack-training.git"
+  },
+  "author": "Anderson Cossul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndersonCossul/webpack-training/issues"
+  },
+  "homepage": "https://github.com/AndersonCossul/webpack-training#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
